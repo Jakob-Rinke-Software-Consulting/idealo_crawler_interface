@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Idealo Crawler Settings</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/api.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Idealo Crawler Settings</h1>
+
+    <!-- Login -->
+    <section id="login-section">
+      <form id="login-form">
+        <label>
+          Benutzername
+          <input type="text" id="username" required>
+        </label>
+        <label>
+          Passwort
+          <input type="password" id="password" required>
+        </label>
+        <button type="submit">Login</button>
+      </form>
+      <p id="login-message"></p>
+    </section>
+
+    <!-- Editor -->
+    <section id="editor-section" class="hidden">
+      <header>
+        <h2>Dateien bearbeiten</h2>
+        <button id="logout-btn" class="secondary">Logout</button>
+      </header>
+
+      <label for="file-select">Datei auswählen:</label>
+      <select id="file-select"></select>
+
+      <label for="file-content">Inhalt:</label>
+      <textarea id="file-content" rows="20"></textarea>
+
+      <button id="save-btn">Speichern</button>
+      <button id="restart-btn">Crawler neu starten</button>
+      <button id="kill-btn" class="danger">Crawler stoppen</button>
+
+      <p id="save-message"></p>
+    </section>
+  </main>
+</body>
+</html>
