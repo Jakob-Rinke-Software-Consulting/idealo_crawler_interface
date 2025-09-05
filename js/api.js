@@ -63,3 +63,6 @@ function killCrawler() {
     return callApi('kill_server.php', {});
 }
 
+function updateCrawler() {
+    return callApi('update_server.php', {});
+}

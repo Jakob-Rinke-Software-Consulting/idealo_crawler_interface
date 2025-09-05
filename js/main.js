@@ -6,6 +6,7 @@ const FILES = [
   "keepa_keys.txt",
   "marken_blacklist.txt",
   "shop_blacklist.txt",
+  "filters.txt",
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const saveMessage = document.getElementById("save-message");
   const restartBtn = document.getElementById("restart-btn");
   const killBtn = document.getElementById("kill-btn");
+  const updateBtn = document.getElementById("update-btn");
 
   // Init file list
   FILES.forEach(f => {
@@ -94,6 +96,19 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Crawler wurde gestoppt: " + res);
     } catch (err) {
       alert("Fehler beim Stoppen: " + err);
+    }
+  });
+
+  // Crawler aktualisieren
+  updateBtn.addEventListener("click", async () => {
+    if (!confirm("Möchten Sie den Crawler wirklich aktualisieren?")) return;
+    try {
+      console.log("Aktualisiere Crawler..");
+      var res = await updateCrawler();
+      console.log("Update response:", res);
+      alert("Crawler wurde aktualisiert: " + res);
+    } catch (err) {
+      alert("Fehler beim Aktualisieren: " + err);
     }
   });
 
