@@ -3,7 +3,7 @@ const FILES = [
   "categories.txt",
   "client_secret.json",
   "discord_api_creds.json",
-  "keepa_keys.txt",
+  "keepa_key.txt",
   "marken_blacklist.txt",
   "shop_blacklist.txt",
   "filters.txt",
