@@ -8,7 +8,7 @@ function printTextfile($filename) {
     if (file_exists($file)) {
         readfile($file);
     } else {
-        echo "File not found.";
+        echo "File not found: $file";
     }
 }
 
