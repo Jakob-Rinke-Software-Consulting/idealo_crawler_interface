@@ -1,5 +1,5 @@
 <?php
-    $BASE_PATH = "/home/ubunutu/idealo_crawler/";
+    $BASE_PATH = "/home/ubuntu/idealo_crawler/";
     $SETTINGS_PATH = $BASE_PATH . "settings/";
     $SERVER_PATH = $BASE_PATH . "start.sh";
     $ALLOWED_FILES = [
