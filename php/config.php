@@ -1,5 +1,5 @@
 <?php
-    $BASE_PATH = "/home/jakobrinke/Documents/fiverr/25/05/idealo_crawler_hillrich/";
+    $BASE_PATH = "/home/ubunut/idealo_crawler/";
     $SETTINGS_PATH = $BASE_PATH . "settings/";
     $SERVER_PATH = $BASE_PATH . "start.sh";
     $ALLOWED_FILES = [
