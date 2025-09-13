@@ -11,9 +11,9 @@ if (!file_exists($loginDataPath)) {
 } else {
     echo "Found 1";
 }
-
+echo $loginDataPath;
 $loginData = json_decode(file_get_contents($loginDataPath), true);
-echo $loginData;
+
 $USERNAME = $loginData['username'];
 $PASSWORD = $loginData['password'];
 
