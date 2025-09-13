@@ -6,7 +6,7 @@ $loginDataPath = __DIR__ . '../../../login_data.json';
 if (!file_exists($loginDataPath)) {
     $loginDataPath = __DIR__ . '../../login_data.json';
     if (!file_exists($loginDataPath)) {
-        $loginDataPath = __DIR__ . '/var/www/login_data.json';
+        $loginDataPath = '/var/www/login_data.json';
     }
 } else {
     echo "Found 1";
