@@ -15,6 +15,9 @@ $loginData = json_decode(file_get_contents($loginDataPath), true);
 $USERNAME = $loginData['username'];
 $PASSWORD = $loginData['password'];
 
+echo $USERNAME;
+echo $PASSWORD;
+
 # check if the user is authenticated using server authentication
 if (isset($_SERVER['PHP_AUTH_USER']) && isset($_SERVER['PHP_AUTH_PW'])) {
     if ($_SERVER['PHP_AUTH_USER'] === $USERNAME && $_SERVER['PHP_AUTH_PW'] === $PASSWORD) {
