@@ -1,11 +1,11 @@
 
 <?php
 // Try to find login_data.json in current or parent directories
-$loginDataPath = __DIR__ . '../../../login_data.json';
+$loginDataPath = __DIR__ . '../../../../login_data.json';
 if (!file_exists($loginDataPath)) {
-    $loginDataPath = __DIR__ . '../../login_data.json';
+    $loginDataPath = __DIR__ . '../../../login_data.json';
     if (!file_exists($loginDataPath)) {
-        $loginDataPath = __DIR__ . '../login_data.json';
+        $loginDataPath = __DIR__ . '../../login_data.json';
         if (!file_exists($loginDataPath)) {
             $loginDataPath = __DIR__ . '/var/www/login_data.json';
         }
