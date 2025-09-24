@@ -11,6 +11,7 @@
         "marken_blacklist.txt",
         "shop_blacklist.txt",
         "filters.txt",
-        "filter_values.txt"
+        "filter_values.txt",
+        "thread_num.txt"
     ]
 ?>
